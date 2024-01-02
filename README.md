@@ -11,7 +11,7 @@ This repository contains a collection of programming exercises that I've solved 
 ## About
 
 This is a repository for the challenges done from the Hackerrank page. 
-- [https://exercism.org/profiles/Renndr](https://www.hackerrank.com/profile/Rendr)
+- https://www.hackerrank.com/profile/Rendr
 
 ## Getting Started
 
