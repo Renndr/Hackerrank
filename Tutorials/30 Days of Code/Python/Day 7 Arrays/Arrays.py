@@ -1,31 +1,21 @@
+def checkPhoneBook(name, book):
+    if name in book:
+        print(f"{name}={book[name]}")
+    else:
+        print("Not found")
+
 if __name__ == '__main__':
     n = int(input().strip())
-
-    arr = list(map(int, input().rstrip().split()))
-
-    singleLine = " ".join(map(str, reversed(arr)))
-
-    print(singleLine)
-
-
-# Another solution:
     
-#     if __name__ == '__main__':
-#     n = int(input().strip())
-
-#     arr = list(map(int, input().rstrip().split()))
-#     arr.reverse()
-#     singleLine = ""
+    phoneBook = {}
     
-#     i = 0
+    for _ in range(n):
+        entry = input().split()
+        phoneBook[entry[0]] = entry[1]
     
-#     for number in arr:
-        
-#         if i == len(arr):
-#             singleLine += str(number)
-#         else:
-#             singleLine += str(number) + " "
-        
-#         i += 1
-            
-#     print(singleLine)
+    try:
+        for _ in range(n):
+            name_to_check = input().strip()
+            checkPhoneBook(name_to_check, phoneBook)
+    except Exception:
+        pass
