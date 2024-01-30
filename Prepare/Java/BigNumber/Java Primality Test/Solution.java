@@ -15,7 +15,11 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         
         BigInteger n = scan.nextBigInteger();
-        
+
+        scan.close();
+            
         System.out.println(Result.checkPrime(n));
+
+
     }
 }
